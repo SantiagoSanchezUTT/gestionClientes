@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('dashboard'); // ← ahora carga la vista con AdminLTE
+    return view('welcome');
 });
 
 Route::resource('clientes', ClienteController::class);
