@@ -31,5 +31,4 @@ class Cliente extends Model
     public function categoria() {
         return $this->belongsTo(CategoriaCliente::class, 'id_cat_cliente');
     }
-
 }
