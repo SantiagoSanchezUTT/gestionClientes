@@ -13,6 +13,10 @@
       color: #fff;
     }
 
+    h1 {
+      font-family: Arial, sans-serif;
+    }
+
     header {
       background: url('https://i.pinimg.com/1200x/09/22/40/092240e3302979f0d72bba933fa0126f.jpg') no-repeat center center/cover;
       height: 100vh;
@@ -105,7 +109,8 @@
     }
   </style>
 </head>
-<body>
+<body class="font-sans antialiased dark:bg-black dark:text-white/50">
+  <!-- Contenido principal -->
   <header>
     <h1>RAÍZ TAMALERA J&U</h1>
     <p>Somos la herencia del maíz</p>
@@ -127,7 +132,10 @@
 
   <footer>
     <p>&copy; 2025 RAÍZ TAMALERA J&U | Todos los derechos reservados</p>
-
   </footer>
+
+  <!-- Esta línea es para Laravel Blade, funciona solo si el archivo es .blade.php -->
+  <!-- @include('auth.register') -->
+
 </body>
 </html>
